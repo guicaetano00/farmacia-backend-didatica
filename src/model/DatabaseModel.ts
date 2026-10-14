@@ -32,11 +32,6 @@ export class DatabaseModel {
 
         // logs mínimos (não expõem segredos)
         console.log("[DB] Host:", host, "Port:", port, "Pooler?", host.includes("pooler.supabase.com"));
-        console.log("[DB] Host:", host);
-        console.log("[DB] Port:", port);
-        console.log("[DB] User:", user);
-        console.log("[DB] Database:", database);
-        console.log("[DB] Pooler:", host.includes("pooler.supabase.com"));
 
         this._pool = new pg.Pool({
             host,
